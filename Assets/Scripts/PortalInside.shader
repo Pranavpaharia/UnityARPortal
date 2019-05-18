@@ -18,12 +18,12 @@ Shader "Custom/PortalInside"
 		Cull Off
 		Lighting Off
 		//ColorMask 0
-		//ZWrite off
+		ZWrite off
 		Stencil {
 			Ref 1
 			Comp [_StencilTest]
 			Pass keep
-			ZFail decrWrap
+		//	ZFail decrWrap
 		}
 
         CGPROGRAM
