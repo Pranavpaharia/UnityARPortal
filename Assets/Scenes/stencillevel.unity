@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4406639, g: 0.4893158, b: 0.5694506, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -678,6 +678,56 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6741577865936751347, guid: d6ec9ba86b480fe4b932a555ac7107ef,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 6741577865936751347, guid: d6ec9ba86b480fe4b932a555ac7107ef,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.039
+      objectReference: {fileID: 0}
+    - target: {fileID: 6741577865936751347, guid: d6ec9ba86b480fe4b932a555ac7107ef,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.449
+      objectReference: {fileID: 0}
+    - target: {fileID: 6741577865936751347, guid: d6ec9ba86b480fe4b932a555ac7107ef,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7114486
+      objectReference: {fileID: 0}
+    - target: {fileID: 6741577865936751347, guid: d6ec9ba86b480fe4b932a555ac7107ef,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.97518784
+      objectReference: {fileID: 0}
+    - target: {fileID: 6741577864926930159, guid: d6ec9ba86b480fe4b932a555ac7107ef,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6741577865081169187, guid: d6ec9ba86b480fe4b932a555ac7107ef,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6741577865601521418, guid: d6ec9ba86b480fe4b932a555ac7107ef,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6741577865840279137, guid: d6ec9ba86b480fe4b932a555ac7107ef,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6741577865936751348, guid: d6ec9ba86b480fe4b932a555ac7107ef,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6ec9ba86b480fe4b932a555ac7107ef, type: 3}

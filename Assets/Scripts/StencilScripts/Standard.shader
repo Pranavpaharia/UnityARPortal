@@ -50,12 +50,19 @@ Shader "Stencil/Standard"
     CGINCLUDE
         #define UNITY_SETUP_BRDF_INPUT MetallicSetup
     ENDCG
+	
+	
 
     SubShader
     {
-        Tags { "RenderType"="Opaque" "PerformanceChecks"="False" }
+        Tags { "RenderType"="Opaque" "Render Queue"="Geometry"  "PerformanceChecks"="False" }
         LOD 300
-
+		
+		Stencil
+		{
+			Ref 1
+			Comp Equal 
+		}
 
         // ------------------------------------------------------------------
         //  Base forward pass (directional light, emission, lightmaps, ...)
