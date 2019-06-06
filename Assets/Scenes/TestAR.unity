@@ -276,7 +276,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   appCamera: {fileID: 896679035}
-  FramePrefab: {fileID: 1229330145301078, guid: 5c58155118a1cf2469411428cfd4362c,
+  FramePrefab: {fileID: 4264530852391679690, guid: 0595414fb1730024aa617a0dd191e177,
     type: 3}
 --- !u!1001 &688001843
 PrefabInstance:

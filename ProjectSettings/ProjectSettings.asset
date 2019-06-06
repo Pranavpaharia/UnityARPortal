@@ -717,10 +717,10 @@ PlayerSettings:
   facebookXfbml: 0
   facebookFrictionlessRequests: 1
   apiCompatibilityLevel: 6
-  cloudProjectId: c24af0f0-1fac-4be6-a206-6dcb0fea74f3
+  cloudProjectId: 
   framebufferDepthMemorylessMode: 0
-  projectName: ARPortal
-  organizationId: pranav-paharia
+  projectName: 
+  organizationId: 
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0
