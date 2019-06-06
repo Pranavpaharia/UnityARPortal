@@ -4,6 +4,7 @@ Shader "Stencil/Standard"
 {
     Properties
     {
+		[Enum(Equal,3,NotEqual,6)] ChooseEnum("Stencil Test", int) = 3
         _Color("Color", Color) = (1,1,1,1)
         _MainTex("Albedo", 2D) = "white" {}
 
@@ -61,7 +62,7 @@ Shader "Stencil/Standard"
 		Stencil
 		{
 			Ref 1
-			Comp Equal 
+			Comp [ChooseEnum]
 		}
 
         // ------------------------------------------------------------------

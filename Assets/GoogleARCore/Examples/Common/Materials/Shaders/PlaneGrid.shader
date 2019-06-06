@@ -6,7 +6,10 @@
         _GridColor ("Grid Color", Color) = (1.0, 1.0, 0.0, 1.0)
         _PlaneNormal ("Plane Normal", Vector) = (0.0, 0.0, 0.0)
         _UvRotation ("UV Rotation", float) = 30
-    }
+		_Alpha ("Alpha Value", float) = 1
+		[Toggle] _Invert("Invert?", Float) = 0
+	}
+
 
     SubShader
     {
@@ -14,6 +17,12 @@
         Blend SrcAlpha OneMinusSrcAlpha
         ZTest on
         ZWrite off
+		
+		Stencil
+		{
+			Ref 1
+			Comp NotEqual
+		}
 
         Pass
         {
@@ -42,6 +51,8 @@
             float4 _GridColor;
             float3 _PlaneNormal;
             fixed _UvRotation;
+			float4 _Alpha;
+			fixed _Invert;
 
             v2f vert (appdata v)
             {
@@ -70,6 +81,9 @@
             fixed4 frag (v2f i) : SV_Target
             {
                 fixed4 col = tex2D(_MainTex, i.uv);
+				
+				if(_Invert == 0)
+					i.color.a = i.color.a * _Alpha;
                 return fixed4(_GridColor.rgb, col.r * i.color.a);
             }
             ENDCG
