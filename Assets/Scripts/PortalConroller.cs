@@ -41,6 +41,7 @@ public class PortalConroller : MonoBehaviour
             //portalMat.SetFloat("_Invert", 0);
             planeGenerator.GetComponent<DetectedPlaneGenerator>().bPlaneVisibility = false;
             pTrackedPlanes = GameObject.FindGameObjectsWithTag("Plane");
+            camScript.SetDoorState(CameraMonitor.DoorState.Open);
             foreach(GameObject plane in pTrackedPlanes)
             {
                 plane.GetComponent<DetectedPlaneVisualizer>().TogglePlaneVisibility(false);
