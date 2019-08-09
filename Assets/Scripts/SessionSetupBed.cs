@@ -14,7 +14,7 @@ public class SessionSetupBed : MonoBehaviour
     GameObject frameObj;
     void Start()
     {
-        
+        //To initialize at the start  
     }
 
     void ApplicationLifeCycle()
